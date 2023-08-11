@@ -1,0 +1,81 @@
+.Sidebar {
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+
+.Toggle {
+    transition: all 0.5s ease-out;
+}
+
+.Show {
+  display: block;
+  opacity: 100%;
+}
+
+.Hide {
+  display: none;
+  opacity: 0%;
+}
+
+.NavLinks {
+  width: 100%;
+  height: calc(100vh - 10rem);
+
+  background: var(--Very-Dark-Violet);
+
+  background-image: url("/images/bg-pattern-mobile-nav.svg");
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
+  position: fixed;
+  top: 5rem;
+  left: 0px;
+
+  padding: 2.5rem 0px;
+  margin: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-transform: capitalize;
+
+  list-style: none;
+
+  transition: all 0.5s ease-out;
+}
+
+.NavLinks li {
+  height: 2.5rem;
+  width: calc(100% - 3rem);
+
+  margin-bottom: 0.5rem;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Karla', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem; 
+  letter-spacing: 0.08525rem;
+  color: var(--White);
+}
+
+.Selected {
+  border: 1.5px solid var(--White);
+}
+
+@media screen and (min-width: 687px) {
+    .Sidebar {
+        display: none !important;
+    }
+}
