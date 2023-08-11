@@ -15,7 +15,7 @@ export default function Sidebar() {
         onClick={() => {
           toggleShowSideBar(!showSideBar);
         }}
-        className={`${showSideBar ? styles.Show : styles.Hide} ${
+        className={`${showSideBar ? styles.Hide : styles.Show} ${
           styles.Toggle
         }`}
       />
@@ -27,7 +27,7 @@ export default function Sidebar() {
         onClick={() => {
           toggleShowSideBar(!showSideBar);
         }}
-        className={`${showSideBar ? styles.Hide : styles.Show} ${
+        className={`${showSideBar ? styles.Show : styles.Hide } ${
           styles.Toggle
         }`}
       />
@@ -37,7 +37,7 @@ export default function Sidebar() {
           toggleShowSideBar(!showSideBar);
         }}
         className={`${styles.NavLinks} ${
-          showSideBar ? styles.Hide : styles.Show
+          showSideBar ? styles.Show : styles.Hide
         }`}
       >
         <li>how we work</li>

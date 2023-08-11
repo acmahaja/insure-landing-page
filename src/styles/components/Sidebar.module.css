@@ -71,7 +71,7 @@
 }
 
 .Selected {
-  border: 1.5px solid var(--White);
+  outline: 1.5px solid var(--White);
 }
 
 @media screen and (min-width: 687px) {

@@ -1,21 +1,76 @@
 .Navbar {
-    background-color: var(--White);
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 5rem;
+  background-color: var(--White);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 5rem;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-    align-items: center;
-    justify-content: space-between;
+  box-sizing: border-box;
 
-    box-sizing: border-box;
+  padding: 0px 1.5rem;
+}
 
-    padding: 0px 1.5rem;
+.Navbar > div {
+  width: 100%;
+  max-width: 70rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .NavLinks {
-    display: none;
+  display: none;
+}
+
+@media screen and (min-width: 687px) {
+  .NavLinks {
+    display: block !important;
+
+    height: fit-content;
+    width: 28rem;
+
+    text-transform: uppercase;
+
+    list-style: none;
+
+    padding: 0px;
+    margin: 0px;
+
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .NavLinks li {
+    width: fit-content;
+
+    color: var(--Dark-Grayish-Violet);
+
+    font-family: "Karla", sans-serif;
+
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.09375rem;
+  }
+
+  li.Selected {
+    color: var(--Very-Dark-Violet);
+    width: 9.125rem;
+    height: 2.5rem;
+    outline: 1.5px solid var(--Very-Dark-Violet);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
